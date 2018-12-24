@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "swagger-documentation-deployment",
     "publisher": "MariusDrasutis",
-    "version": "1.0.6",
+    "version": "1.0.9",
     "name": "Swagger Documentation Deployment",
     "description": "Deploy Docker API updates from a document in your repository.",
     "public": false,
@@ -20,7 +20,7 @@
             "targets": [ "ms.vss-endpoint.endpoint-types" ],
             "properties": {
                 "name": "swagger-hub",
-                "displayName": "Credentials for connecting to SwaggerHub.",
+                "displayName": "SwaggerHub",
                 "url": {
                     "displayName": "SwaggerHub API URL",
                     "helpText": "URL for the SwaggerHub Registry API.",
@@ -36,7 +36,7 @@
         },
         {
             "id": "build-task",
-            "description": "Task with a dynamic property getting data from an endpoint REST data source",
+            "description": "SwaggerHub API interaction.",
             "type": "ms.vss-distributed-task.task",
             "targets": [ "ms.vss-distributed-task.tasks" ],
             "properties": {
